@@ -1,1 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <input type="checkbox" id="hamburger-toggle" class="hamburger-toggle">
+        <aside class="sidebar">
+            <div class="logo">📊 Admin Dashboard</div>
+            <nav class="nav-menu">
+                <ul>
+                    <li class="nav-item active">🏠 Dashboard</li>
+                    <li class="nav-item">📈 Analytics</li>
+                    <li class="nav-item">🛒 Products</li>
+                    <li class="nav-item">👥 Users</li>
+                    <li class="nav-item">⚙️ Settings</li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <img src="images/user-avatar.png" alt="User Avatar" class="avatar">
+                <span>John Doe</span>
+                <div class="dropdown">▼</div>
+            </div>
+        </aside>
 
+        <!-- Header -->
+        <header class="header">
+            <label for="hamburger-toggle" class="hamburger">☰</label>
+            <h1>Dashboard Overview</h1>
+            <div class="header-actions">
+                <input type="search" placeholder="Search..." class="search-bar">
+                <div class="notifications">🔔 <span class="badge">3</span></div>
+                <div class="user-menu">👤 <div class="dropdown-content">
+                    <a href="#">Profile</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Logout</a>
+                </div></div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Statistics Cards -->
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <div class="icon">💰</div>
+                    <h3>$24,500</h3>
+                    <p>Revenue</p>
+                    <span class="change positive">+12.5%</span>
+                </div>
+                <div class="stat-card">
+                    <div class="icon">👥</div>
+                    <h3>1,245</h3>
+                    <p>Users</p>
+                    <span class="change positive">+8.3%</span>
+                </div>
+                <div class="stat-card">
+                    <div class="icon">🛍️</div>
+                    <h3>342</h3>
+                    <p>Orders</p>
+                    <span class="change negative">-2.1%</span>
+                </div>
+                <div class="stat-card">
+                    <div class="icon">📈</div>
+                    <h3>15.7%</h3>
+                    <p>Growth</p>
+                    <span class="change positive">+5.4%</span>
+                </div>
+            </section>
+
+            <!-- Recent Orders Table -->
+            <section class="table-section">
+                <h2>Recent Orders</h2>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Product</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#1001</td>
+                            <td>Jane Smith</td>
+                            <td>Widget A</td>
+                            <td>$45.99</td>
+                            <td><span class="badge success">Delivered</span></td>
+                            <td>2025-10-01</td>
+                        </tr>
+                        <tr>
+                            <td>#1002</td>
+                            <td>Mike Johnson</td>
+                            <td>Widget B</td>
+                            <td>$29.99</td>
+                            <td><span class="badge warning">Pending</span></td>
+                            <td>2025-10-02</td>
+                        </tr>
+                        <tr>
+                            <td>#1003</td>
+                            <td>Emma Wilson</td>
+                            <td>Widget C</td>
+                            <td>$89.50</td>
+                            <td><span class="badge success">Delivered</span></td>
+                            <td>2025-10-03</td>
+                        </tr>
+                        <tr>
+                            <td>#1004</td>
+                            <td>Tom Brown</td>
+                            <td>Widget D</td>
+                            <td>$15.00</td>
+                            <td><span class="badge danger">Cancelled</span></td>
+                            <td>2025-10-04</td>
+                        </tr>
+                        <tr>
+                            <td>#1005</td>
+                            <td>Sarah Davis</td>
+                            <td>Widget E</td>
+                            <td>$65.75</td>
+                            <td><span class="badge success">Delivered</span></td>
+                            <td>2025-10-05</td>
+                        </tr>
+                        <tr>
+                            <td>#1006</td>
+                            <td>Chris Lee</td>
+                            <td>Widget F</td>
+                            <td>$34.20</td>
+                            <td><span class="badge warning">Pending</span></td>
+                            <td>2025-10-06</td>
+                        </tr>
+                        <tr>
+                            <td>#1007</td>
+                            <td>Lisa Adams</td>
+                            <td>Widget G</td>
+                            <td>$78.90</td>
+                            <td><span class="badge success">Delivered</span></td>
+                            <td>2025-10-07</td>
+                        </tr>
+                        <tr>
+                            <td>#1008</td>
+                            <td>James White</td>
+                            <td>Widget H</td>
+                            <td>$52.30</td>
+                            <td><span class="badge danger">Cancelled</span></td>
+                            <td>2025-10-08</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="6">Total Orders: 8</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+
+            <!-- User Analytics Table -->
+            <section class="table-section">
+                <h2>User Analytics</h2>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th colspan="2">User Type</th>
+                            <th>Count</th>
+                            <th>Percentage</th>
+                            <th>Trend</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2">Premium Users</td>
+                            <td>245</td>
+                            <td>19.7%</td>
+                            <td>📈</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Standard Users</td>
+                            <td>800</td>
+                            <td>64.3%</td>
+                            <td>📉</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Free Users</td>
+                            <td>200</td>
+                            <td>16.0%</td>
+                            <td>➡️</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Total</td>
+                            <td>1245</td>
+                            <td>100%</td>
+                            <td>-</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+
+            <!-- Quick Actions Form -->
+            <section class="form-section">
+                <h2>Add New Product</h2>
+                <form class="product-form">
+                    <fieldset>
+                        <legend>Product Information</legend>
+                        <div class="form-group">
+                            <label for="product-name">Product Name *</label>
+                            <input type="text" id="product-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="category">Category</label>
+                            <select id="category">
+                                <option value="">Select Category</option>
+                                <option value="electronics">Electronics</option>
+                                <option value="clothing">Clothing</option>
+                                <option value="accessories">Accessories</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="price">Price</label>
+                            <input type="number" id="price" min="0" max="10000" step="0.01">
+                        </div>
+                        <div class="form-group">
+                            <label for="sku">SKU/Code</label>
+                            <input type="text" id="sku" pattern="[A-Z0-9-]+">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Inventory</legend>
+                        <div class="form-group">
+                            <label for="stock">Stock Quantity</label>
+                            <input type="number" id="stock" min="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="reorder">Reorder Level</label>
+                            <input type="number" id="reorder" min="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="supplier">Supplier</label>
+                            <select id="supplier">
+                                <option value="">Select Supplier</option>
+                                <option value="sup1">Supplier 1</option>
+                                <option value="sup2">Supplier 2</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Media</legend>
+                        <div class="form-group">
+                            <label for="image">Product Image</label>
+                            <input type="file" id="image" accept="image/*">
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" id="featured"> Featured Product
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>Status</label>
+                            <label><input type="radio" name="status" value="active" checked> Active</label>
+                            <label><input type="radio" name="status" value="inactive"> Inactive</label>
+                        </div>
+                    </fieldset>
+                    <div class="form-actions">
+                        <button type="submit" class="btn primary">Save</button>
+                        <button type="button" class="btn secondary">Save & Continue</button>
+                        <button type="button" class="btn danger">Cancel</button>
+                    </div>
+                </form>
+                <button class="fab">➕</button>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
