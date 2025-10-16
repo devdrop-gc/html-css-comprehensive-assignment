@@ -1,1 +1,136 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="InnovateTech Solutions - Leading provider of modern tech services.">
+    <meta name="keywords" content="tech, innovation, web development, mobile apps">
+    <meta name="author" content="InnovateTech Solutions">
+    <title>InnovateTech Solutions - Home</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-layout">
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="InnovateTech Solutions Logo" width="150">
+            </a>
+            <nav class="nav">
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="cta-button">Get Started</a>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Innovating Technology for Tomorrow</h1>
+                <p>Your partner in cutting-edge digital solutions.</p>
+                <div class="hero-buttons">
+                    <a href="about.html" class="cta-button">Learn More</a>
+                    <a href="contact.html" class="cta-button secondary">Contact Us</a>
+                </div>
+            </div>
+            <img src="images/hero-image.jpg" alt="Abstract tech innovation visualization" class="hero-image">
+        </section>
+        <section class="services">
+            <h2>Our Services</h2>
+            <p class="section-tagline">Tailored solutions to elevate your business.</p>
+            <div class="services-grid">
+                <article class="service-card">
+                    <img src="images/icons/web-dev.png" alt="Web Development Icon" class="service-icon" width="32" height="32">
+                    <h3>Web Development</h3>
+                    <p>Build responsive, modern websites tailored to your needs.</p>
+                    <a href="#" aria-label="Learn more about Web Development">Learn More</a>
+                </article>
+                <article class="service-card">
+                    <img src="images/icons/mobile-apps.png" alt="Mobile Apps Icon" class="service-icon" width="32" height="32">
+                    <h3>Mobile Apps</h3>
+                    <p>Develop intuitive mobile applications for iOS and Android.</p>
+                    <a href="#" aria-label="Learn more about Mobile Apps">Learn More</a>
+                </article>
+                <article class="service-card">
+                    <img src="images/icons/consulting.png" alt="Consulting Icon" class="service-icon" width="32" height="32">
+                    <h3>Consulting</h3>
+                    <p>Expert advice to optimize your tech strategy.</p>
+                    <a href="#" aria-label="Learn more about Consulting">Learn More</a>
+                </article>
+                <article class="service-card">
+                    <img src="images/icons/custom-solutions.png" alt="Custom Solutions Icon" class="service-icon" width="32" height="32">
+                    <h3>Custom Solutions</h3>
+                    <p>Tailored tech solutions for unique business challenges.</p>
+                    <a href="#" aria-label="Learn more about Custom Solutions">Learn More</a>
+                </article>
+            </div>
+        </section>
+        <section class="about-preview">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>InnovateTech Solutions delivers innovative digital solutions to help businesses thrive. Our expert team is dedicated to excellence in every project.</p>
+                <h3>Our Mission</h3>
+                <p>Empowering businesses with cutting-edge technology for growth.</p>
+                <h3>Our Vision</h3>
+                <p>Leading global innovation in tech solutions by 2030.</p>
+                <a href="about.html" class="cta-button secondary">Read More</a>
+            </div>
+            <div class="stats" role="region" aria-describedby="stats-description">
+                <p id="stats-description" class="sr-only">Company achievements and statistics</p>
+                <dl>
+                    <dt>Projects Completed</dt>
+                    <dd class="stat-counter" data-target="500">500+</dd>
+                    <dt>Happy Clients</dt>
+                    <dd class="stat-counter" data-target="300">300+</dd>
+                    <dt>Years in Business</dt>
+                    <dd class="stat-counter" data-target="10">10</dd>
+                </dl>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <img src="images/logo.png" alt="InnovateTech Solutions Logo" width="100" class="footer-logo">
+                <address>
+                    InnovateTech Solutions<br>
+                    123 Tech Lane<br>
+                    Innovation City, IN 12345
+                </address>
+            </div>
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <ul class="footer-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Stay Connected</h3>
+                <ul class="social-links">
+                    <li><a href="https://twitter.com" aria-label="Follow us on Twitter">Twitter</a></li>
+                    <li><a href="https://facebook.com" aria-label="Follow us on Facebook">Facebook</a></li>
+                    <li><a href="https://linkedin.com" aria-label="Follow us on LinkedIn">LinkedIn</a></li>
+                </ul>
+                <form class="newsletter-form" action="#" method="post">
+                    <label for="newsletter-email" class="sr-only">Email for newsletter</label>
+                    <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Enter your email" required aria-required="true">
+                    <button type="submit" aria-label="Subscribe to newsletter">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <p class="footer-copyright">&copy; 2025 InnovateTech Solutions. All rights reserved.</p>
+    </footer>
+</body>
+</html>
